@@ -29,6 +29,7 @@ CONF_ADDITIONAL_INFO = 'additional_information'
 CONF_IGMPFIX = 'igmp_fix'
 CONF_MDNS = 'mdns'
 CONF_LIGHT_SWITCH = 'light_switch'
+CONF_MOMENTARY_BUTTON = "momentary_button"
 CONF_OBJECT_ID_PREFIX = 'id_prefix'
 CONF_ENTITY_ID = 'entity_id'
 CONF_SHOW_ID_IN_NAME = 'show_id_in_name'
@@ -104,7 +105,7 @@ DEVICE_CONFIG = [
 ALL_CONFIG = {
     #CONF_ENTITY_ID : { "type" : "str" },
     #CONF_LIGHT_SWITCH : { "type" : "bool" },
-    #CONF_OBJECT_ID_PREFIX : { "type" : "str" },    
+    #CONF_OBJECT_ID_PREFIX : { "type" : "str" },
     #CONF_DISCOVER_BY_IP : { "type" : "list" },
 
     #General
@@ -117,10 +118,10 @@ ALL_CONFIG = {
 
     #Discovery
     CONF_IGMPFIX : { "type" : "bool", "group": "discovery" },
-    CONF_MDNS : { "type" : "bool", "group": "discovery"  },    
+    CONF_MDNS : { "type" : "bool", "group": "discovery"  },
     CONF_DISCOVERY : { "type" : "bool", "group": "discovery"  },
     CONF_HOST_IP : { "type" : "str", "group": "discovery"  },
-    
+
     #Name
     CONF_SHOW_ID_IN_NAME : { "type" : "bool", "group": "name" },
     CONF_TMPL_NAME : { "type" : "str", "group": "name"  },
@@ -128,16 +129,16 @@ ALL_CONFIG = {
     #Cloud
     CONF_CLOUD_AUTH_KEY : { "type" : "txt", "group": "cloud"  },
     CONF_CLOUD_SERVER : { "type" : "str", "group": "cloud"  },
-    
+
     #MQTT integrated
     CONF_MQTT_PORT : { "type" : "int", "group" : "mqtt-integrated" },
-    
+
     #MQTT broker
     CONF_MQTT_SERVER_HOST : { "type" : "str", "group" : "mqtt-broker" },
     CONF_MQTT_SERVER_PORT : { "type" : "int", "group" : "mqtt-broker" },
     CONF_MQTT_SERVER_USERNAME : { "type" : "str", "group" : "mqtt-broker" },
     CONF_MQTT_SERVER_PASSWORD : {"type" : "str", "group" : "mqtt-broker" },
-    
+
     #Debug
     CONF_LOCAL_PY_SHELLY : { "type" : "bool", "group" : "debug" },
     CONF_ONLY_DEVICE_ID : {"type" : "str", "group" : "debug" },
