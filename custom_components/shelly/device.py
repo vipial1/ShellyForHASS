@@ -51,7 +51,7 @@ class ShellyDevice(RestoreEntity):
         self.schedule_update_ha_state(True)
 
         if hasattr(self._dev, 'kg_momentary_button'):
-            self._dev.kg_momentary_button = instance._get_specific_config(CONF_MOMENTARY_BUTTON, None, dev.id, dev.block.id)
+            self._dev.kg_momentary_button = self.instance._get_specific_config(CONF_MOMENTARY_BUTTON, None, self._dev.id, self._dev.block.id)
 
     def _updated(self, _block):
         """Receive events when the switch state changed (by mobile,
